@@ -1,0 +1,135 @@
+body{
+    background-color: #202020;
+    font-family: "Roboto", "Arial", sans-serif;
+    color: white;
+    font-size: 14px;
+}
+header{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header img{
+    cursor: pointer;
+}
+.left-centered{
+    display:flex;
+    align-items: center;
+    justify-content: left;
+}
+.menu{
+    height:30px;
+    filter: invert();
+    padding: 7px 8px 8px 8px;
+}
+.youtube-icon{
+    height:20px;
+    padding-left: 16px;
+}
+.youtube-logo{
+    filter: invert();
+    height: 46px;
+    padding-left: 3px;
+}
+.search-input{
+    width: 525px;
+    height: 24px;
+    background-color: #121212;
+    padding: 5px 0 5px 7px;
+    color: white;
+    font-size: 15px;
+    font-family: Roboto, Noto, sans-serif;
+    border: solid 1px rgb(48, 48, 48);
+}
+.search-icon{
+    height: 19px;
+    width: 45px;
+    filter: invert();
+    padding: 8.5px 10px 8.5px 10px;
+    background: #d5d1d1;
+    border-radius: 5%;
+}
+.search-position{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.microphone-icon{
+    height: 19px;
+    padding: 10px;
+    margin-left: 10px;
+    background-color: #fff3;
+    border-radius: 50%;
+    filter: invert();
+}
+.right-centered{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 15px;
+}
+.notification-camera-icons{
+    height: 23px;
+    padding: 5px 10px 5px 5px;
+    filter: invert();
+}
+.account-image{
+    height: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.youtube-video{
+    background-color: black;
+    max-width: 1366px;
+    max-height: 480px;
+    width:100%;
+    height:100%;
+}
+.description{
+    width: 705px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.title-video{
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: bold;
+    font-family: "YouTube Sans", "Roboto", sans-serif;
+}
+.date-video{
+    font-weight: bold;
+    line-height: 20px;
+    white-space: pre-wrap;
+}
+.description-text{
+    color:rgb(170, 170, 170);
+    line-height: 20px;
+    padding-left: 5px;
+}
+.thumb-icons{
+    height:18px; 
+    filter: invert();
+    margin-left: 10px;
+}
+.share-icon{
+    transform: rotate(90deg);
+    height:18px; 
+    filter: invert();
+    margin-left: 10px;
+}
+.icon-text{
+    letter-spacing: 0.5px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.bottom-navigation-bar{
+    display: flex;
+    margin-top: 10px;
+    cursor: pointer;
+}

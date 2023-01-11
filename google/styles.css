@@ -1,0 +1,106 @@
+body {
+    height: calc(100vh - 150px);
+    font: 13px/27px Roboto,Arial,sans-serif;
+    color: #fefeff;
+}
+.flex {
+    display: flex;
+}
+span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+button:hover {
+    cursor: pointer;
+    background-color: #303134;
+    border: 1px solid #5f6368;
+    color: #e8eaed;
+}
+a:hover {
+    cursor: pointer;
+}
+.centered {
+    align-items: center; 
+    justify-content:center;
+}
+.main-header {
+    font: 13px/27px Roboto,Arial,sans-serif;
+    height: 48px;
+    align-items: center;
+    justify-content:end;
+    padding: 6px;
+}
+.region-footer {
+    background:#171717;
+    padding: 15px 30px;
+    border-bottom: 1px solid #3c4043;
+    font-size: 15px;
+    align-items:left;
+    height:18px;
+}
+.information-footer {
+    background:#171717;
+    height:46px;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.images-header {
+    padding: 0 15px 0 15px;
+}
+.main-color {
+    background-color: rgba(32,33,36,1);
+}
+.account-image{
+    border-radius: 50%;
+}
+.account-image:hover{
+    cursor: pointer;
+}
+.google-image{
+    height: calc(100% - 560px);
+}
+.input-main{
+    padding: 5px 8px 0 14px;
+    border-radius:25px;
+    border-color:#5f6368;
+    width: 560px;
+    height: 34px;
+    border-width: thin;
+}
+.input-padding{
+    padding: 20px;
+}
+.button-search{
+    background-color: #303134;
+    font-size: 14px;
+    color: white;
+    border: 1px;
+    border-radius: 4px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+    text-align: center;
+}
+.google-offered{
+    color:#bdc1c6;
+    font-size: small;
+    text-align: center;
+    height: 28px;
+}
+.text-footer{
+    padding: 15px;
+    font-size: 14px;
+    color: #999da2;
+}
+.language-bulgarian{
+    padding: 0 3px;
+}
+.image-icon{
+    height: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+}
+.input-icon{
+    position: relative;
+}

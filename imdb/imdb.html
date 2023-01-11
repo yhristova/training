@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IMDb: Ratings,Reviews, and Where to Watch the Best Movies & TV Shows</title>
+    <link rel="stylesheet" href="imdb-styles.css" />
+</head>
+
+<body>
+    <ul id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <li type="button" class="collapsible">
+            <img class="menu-icons" src="https://www.svgrepo.com/show/152129/movie-film.svg">
+            <a href="#">Movies</a>
+        </li>
+        <ul class="content">
+            <li>Release Calendar</li>
+            <li>Top 250 Movies</li>
+            <li>Most Popular Movies</li>
+            <li>Browse Movies by Genre</li>
+            <li>Top Box Office</li>
+            <li>Showtimes & Tickets</li>
+            <li>Movie News</li>
+            <li>India Movie Spotlight</li>
+        </ul>
+        <li type="button" class="collapsible">
+            <img class="menu-icons" src="https://www.svgrepo.com/show/379280/tv.svg">
+            <a href="#">TV Shows</a>
+        </li>
+        <ul class="content">
+            <li>What's on TV & Streaming</li>
+            <li>Top 250 TV Shows</li>
+            <li>Most Popular TV Shows</li>
+            <li>Browse TV Shows by Genre</li>
+            <li>TV News</li>
+            <li>India TV Spotlight</li>
+        </ul>
+        <li>
+            <img class="menu-icons" src="https://www.svgrepo.com/show/264919/play.svg">
+            <a href="#">Watch</a>
+        </li>
+        <li>
+            <img class="menu-icons"
+                src="https://cdn3.iconfinder.com/data/icons/award-and-trohpy/78/Award_ribbon_cup-11-512.png">
+            <a href="#">Awards & Events</a>
+        </li>
+        <li>
+            <img class="menu-icons" src="https://cdn-icons-png.flaticon.com/512/33/33308.png">
+            <a href="#">Celebs</a>
+        </li>
+        <li>
+            <img class="menu-icons" src="https://cdn3.iconfinder.com/data/icons/faticons/32/globe-01-512.png">
+            <a href="#">Community</a>
+        </li>
+    </ul>
+
+    <header class="flex main-header">
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        </div>
+        <img class="imdb-icon"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/2560px-IMDB_Logo_2016.svg.png" />
+        <div class="all-button">
+            <div type="button" class="all-collapsible">
+                <span>All</span>
+                <span class="all-arrow">&#9662;</span>
+            </div>
+            <ul class="content all-menu">
+                <li>
+                    <img class="menu-icons" src="https://www.svgrepo.com/show/42223/magnifying-glass.svg" />
+                    <a>All</a>
+                </li>
+                <li>
+                    <img class="menu-icons" src="https://www.svgrepo.com/show/152129/movie-film.svg" />
+                    <a>Titles</a>
+                </li>
+                <li>
+                    <img class="menu-icons" src="https://www.svgrepo.com/show/379280/tv.svg" />
+                    <a>TV Episodes</a>
+                </li>
+                <li>
+                    <img class="menu-icons" src="https://cdn-icons-png.flaticon.com/512/33/33308.png" />
+                    <a>Celebs</a>
+                </li>
+                <li>
+                    <img class="menu-icons" src="https://www.svgrepo.com/show/163816/buildings.svg" />
+                    <a>Companies</a>
+                </li>
+                <li>
+                    <img class="menu-icons" src="https://www.svgrepo.com/show/393726/mark-2.svg" />
+                    <a>Keywords</a>
+                </li>
+                <li style="border-top:solid; border-top-width:0.5px; border-color:#444">
+                    <img class="menu-icons" src="https://www.svgrepo.com/show/21125/search.svg" />
+                    <a>Advanced Search</a>
+                </li>
+            </ul>
+        </div>
+        <div class="icon-input">
+            <input class="header-input" placeholder="Search in IMDb">
+            <img class="search-icon" src="https://www.svgrepo.com/show/42223/magnifying-glass.svg" />
+        </div>
+        <div class="vertical-line"></div>
+        <div type="button" class="sign-in-button">Sign In</div>
+        <div type="button" class="language-collapsible language-button">
+            <span>EN</span>
+            <span>&#9662;</span>
+        </div>
+        <div class="content language-menu">
+            <span class="fully-supported">FULLY SUPPORTED</span>
+            <div>
+                <input type="radio" id="English" value="English" checked>
+                <label for="English">English</label>
+            </div>
+
+            <span class="partially-supported">PARTIALLY SUPPORTED</span>
+            <div>
+                <input type="radio" id="Français" value="Français">
+                <label for="Français">Français (Canada)</label>
+            </div>
+            <div>
+                <input type="radio" id="Français1" value="Français1">
+                <label for="Français1">Français (France)</label>
+            </div>
+            <div>
+                <input type="radio" id="Deutsch" value="Deutsch">
+                <label for="Deutsch">Deutsch (Deutschland)</label>
+            </div>
+            <div>
+                <input type="radio" id="हिंदी (भारत)" name="radio-language" value="हिंदी (भारत)">
+                <label for="हिंदी (भारत)">हिंदी (भारत)</label>
+            </div>
+            <div>
+                <input type="radio" id="Italiano" value="Italiano">
+                <label for="Italiano">Italiano (Italia)</label>
+            </div>
+            <div>
+                <input type="radio" id="Português" value="Português">
+                <label for="Português">Português (Portugal)</label>
+            </div>
+            <div>
+                <input type="radio" id="Español" value="Español">
+                <label for="Español">Español (Mexico)</label>
+            </div>
+            <div>
+                <input type="radio" id="Español" value="Español">
+                <label for="Español">Español (España)</label>
+            </div>
+        </div>
+    </header>
+
+    <div class="carousel-wrapper">
+        <div class="slideshow-container fade">
+            <div class="Containers">
+                <div class="images-carousel wednesday">
+                </div>
+            </div>
+
+            <div class="Containers">
+                <div class="images-carousel women-talking">
+                </div>
+            </div>
+
+            <div class="Containers">
+                <div class="images-carousel lotr">
+                </div>
+            </div>
+
+            <div class="image-caption-carousel">
+                <img class="series-image"
+                    src="https://m.media-amazon.com/images/M/MV5BZjZmN2IzYWMtZWI4YS00MGE1LWEyMzYtMTU5MDhjZWVmY2U5XkEyXkFqcGdeQXVyMTA1OTcyNDQ4._V1_.jpg">
+                <img class="play-button"
+                    src="https://www.freepnglogos.com/uploads/play-button-png/index-media-cover-art-play-button-overlay-5.png">
+                <div class="text-image">
+                    <span>Jenna Ortega is "Wednesday"</span>
+                    <span style="font-size:20px;">Watch the official trailer</span>
+                </div>
+            </div>
+
+            <a class="back" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <div class="grid-title">
+        <div class="grid-title-position">
+            <div>
+            <span class="title-main">Top box office (US)</span>
+            <span class="title-arrow">&#10095;</span>
+            </div>
+        <span class="title-date">Weekend of October 14-16</span>
+        </div>
+    </div>
+    <div class="top-box-office-grid">
+        <div class="top-box-items">
+            <span>1</span>
+            <div class="yellow-line"></div>
+            <img class="plus-flag"
+                src="https://cdn3.iconfinder.com/data/icons/ui-03-basic-2/100/04_23_18_135_UI_03_Basic__2-512.png">
+            <div class="text-grid">
+            <span class="budget-movies">Halloween Ends</span>
+            <span class="budget">$41M</span>
+            </div>
+        </div>
+        <div class="top-box-items position-smile background-2-4-6">
+            <span>2</span>
+            <div class="yellow-line"></div>
+            <img class="plus-flag"
+                src="https://cdn3.iconfinder.com/data/icons/ui-03-basic-2/100/04_23_18_135_UI_03_Basic__2-512.png">
+            <div class="text-grid">
+            <span class="budget-movies">Smile</span>
+            <span class="budget">$12M</span>
+            </div>
+        </div>
+        <div class="top-box-items position-lyle-lyle">
+            <span>3</span>
+            <div class="yellow-line"></div>
+            <img class="plus-flag"
+            src="https://cdn3.iconfinder.com/data/icons/ui-03-basic-2/100/04_23_18_135_UI_03_Basic__2-512.png">
+            <div class="text-grid">
+                <span class="budget-movies">Lyle, Lyle, Crocodile</span>
+                <span class="budget">$7.4M</span>
+            </div>
+        </div>
+        <div class="top-box-items background-2-4-6">
+            <span>4</span>
+            <div class="yellow-line"></div>
+            <img class="plus-flag"
+            src="https://cdn3.iconfinder.com/data/icons/ui-03-basic-2/100/04_23_18_135_UI_03_Basic__2-512.png">
+            <div class="text-grid">
+                <span class="budget-movies">The Woman Kind</span>
+                <span class="budget">$3.7M</span>
+            </div>
+        </div>
+        <div class="top-box-items">
+            <span>5</span>
+            <div class="yellow-line"></div>
+            <img class="plus-flag"
+                src="https://cdn3.iconfinder.com/data/icons/ui-03-basic-2/100/04_23_18_135_UI_03_Basic__2-512.png">
+            <div class="text-grid">
+                <span class="budget-movies">Amsterdam</span>
+                <span class="budget">$2.9</span>
+            </div>
+        </div>
+        <div class="top-box-items background-2-4-6">
+            <span>6</span>
+            <div class="yellow-line"></div>
+            <img class="plus-flag"
+                src="https://cdn3.iconfinder.com/data/icons/ui-03-basic-2/100/04_23_18_135_UI_03_Basic__2-512.png">
+            <div class="text-grid">
+                <span class="budget-movies">Don't Worry Darling</span>
+                <span class="budget">$2.2M</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.display = "initial";
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+        var coll = document.getElementsByClassName("all-collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+        var coll = document.getElementsByClassName("language-collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+        var slidePosition = 1;
+        SlideShow(slidePosition);
+
+        function plusSlides(n) {
+            SlideShow(slidePosition += n);
+        }
+
+        function currentSlide(n) {
+            SlideShow(slidePosition = n);
+        }
+
+        function SlideShow(n) {
+            var i;
+            var slides = document.getElementsByClassName("Containers");
+            if (n > slides.length) { slidePosition = 1 }
+            if (n < 1) { slidePosition = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slidePosition - 1].style.display = "block";
+        }
+
+        var slidePosition = 0;
+        SlideShowAuto();
+
+        function SlideShowAuto() {
+            var i;
+            var slides = document.getElementsByClassName("Containers");
+            console.log(slides)
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slidePosition++;
+            if (slidePosition > slides.length) { slidePosition = 1 }
+            slides[slidePosition - 1].style.display = "block";
+            setTimeout(SlideShowAuto, 5000); // Change image every 2 seconds
+        }
+
+    </script>
+
+</body>
+
+</html>
