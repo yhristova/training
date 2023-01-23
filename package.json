@@ -1,0 +1,22 @@
+{
+  "name": "training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js-exercises.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yhristova/training.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yhristova/training/issues"
+  },
+  "homepage": "https://github.com/yhristova/training#readme",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}
